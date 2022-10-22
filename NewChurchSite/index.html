@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intuitive Solutions</title>
+  <link href="./css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico" />
+</head>
+
+<body>
+    <!-- spacer -->
+    <div class="container spacer"></div>
+    <!-- desktop Navbar -->
+    <nav class="navbar">
+      <img src="./images/favicon.png" alt="">
+      <h1 class="mainHead"> <a href="#frame1" class="linker">Intuitive Solutions</a></h1>
+      <ul class="navLinks">
+        <li><a href="#frame2" class="navLink linker">Services</a></li>
+        <li><a href="#frame3" class="navLink linker">About Me</a></li>
+        <li><a href="#contact" class="navLink linker">Contact</a></li>
+      </ul>
+    </nav>
+
+  <!-- mobile navbar-->
+  <div class="container topnav">
+    <img src="./images/favicon.png" alt="">
+    <a href="#frame1" class="linker active">Intuitive Solutions</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myMenu">
+      <a href="#frame2" class="linker">Services</a>
+      <a href="#frame3" class="linker">About Me</a>
+      <a href="#contact" class="linker">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Introduction -->
+  <div class="container frame1" id="frame1">
+    <div class="fr1">
+      <div class="frameHeader">
+        <h2>Accomplishing technical problems from your perspective:</h2>
+        <p>Thinking like an engineer experienced in psychology and interpersonal
+          communication.</p>
+      </div>
+      <a href="#frame2" class="linker">Learn More</a>
+    </div>
+  </div>
+
+  <div class="container spacer"></div>
+
+  <!-- Services -->
+  <div class="container frame2" id="frame2">
+    <img src="./images/services.jpg" alt="Services">
+    <div class="fr2">
+      <h1>Services</h1>
+      <button type="button" class="collapsible accordion">Electrical Engineering</button>
+      <div class="content">
+        <ul>
+          <li>Electrical Engineering degree from an ABET accredited University</li>
+          <br>
+          <li>Experience in test bed implementation, circuit design, and prototyping</li>
+          <br>
+          <li>Experience with MATLAB, Eagle, and Mulitsim</li>
+        </ul>
+      </div>
+      <button type="button" class="collapsible accordion">Website Development</button>
+      <div class="content">
+        <ul>
+          <li>HTML, CSS, JavaScript, and Python experience</li>
+          <br>
+          <li>Front end and back end experience with the appropriate packages</li>
+          <br>
+          <li>Let's work together to develop a website that pulls in customers and represents you well!</li>
+        </ul>
+      </div>
+      <button type="button" class="collapsible accordion">Excel</button>
+      <div class="content">
+        <ul>
+          <li>Use Excel to streamline your workflow, design process, or even personal productivity</li>
+          <br>
+          <li>Experience with an array of Excel functions as well as macro programming using VBA</li>
+        </ul>
+      </div>
+      <button type="button" class="collapsible accordion">Sound Engineering</button>
+      <div class="content">
+        <ul>
+          <li>Can perform sound system setup, soundboard training, and other sound consulting</li>
+          <br>
+          <li>Experience with small scale recording operations for those just starting out in the music industry</li>
+          <br>
+          <li>I also have years of experience playing and performing while playing piano, guitar, or singing which allows
+            me to understand many points of view</li>
+        </ul>
+      </div>
+      <button type="button" class="collapsible accordion">Live Stream Tech</button>
+      <div class="content">
+        <ul>
+          <li>Hire me for you next live stream event to get high quality audio and video</li>
+          <br>
+          <li>I can also perform light video editing for a recorded copy of your livestream event</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <a href="#contact" class="linker">Contact</a>
+  </div>
+
+  <div class="container spacer"></div>
+
+  <div class="container frame3" id="frame3">
+    <div class="fr3">
+      <h1>About Me</h1>
+      <p>I am a recent graduate of Western Kentucky University with the goal of
+        becoming a freelance tech consultant while pursuing a career in counseling and ministry.
+        I enjoy serving others in my free time through his local church and community events.
+        An avid musician, I love to play whenever I can with whoever is willing! I believe
+        that my empathic abilities developed through pschology will help me to better provide for my customers!
+        Go with Intuitive Solutions for your next step in your journey!</p>
+    </div>
+    <img src="./images/profile.jpg" alt="About Me">
+  </div>
+
+  <div class="container spacer"></div>
+
+  <!-- Contact -->
+  <div class="container contact" id="contact">
+    <div class="cota">
+      <h1>Contact Me</h1>
+      <form>
+        <input type="text" id="name" placeholder="Name">
+        <br>
+        <input type="email" id="email" placeholder="Email">
+        <br>
+        <textarea name="comments" rows="8" cols="50" placeholder="What can I help you with?"></textarea>
+        <br>
+        <button type="button" id="contactSub" name="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer container">
+    <p class="">Intuitive Solutions &copy</p>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
