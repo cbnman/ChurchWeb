@@ -1,92 +1,17 @@
 @import 'config';
 
 body {
-  background-image: url('../images/Back.jpg');
+  background-image: url('../images/ChurchPic.jpg');
   background-position: top;
   background-size: cover;
 }
-/* Style the mobile navigation menu */
 
-.navbar{
-  display:none;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: $color-primary-1;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-
-  img {
-    padding: 10px;
-    float: left;
-    height: 30px;
-  }
-}
-/* Hide the links inside the navigation menu (except for logo/home) */
-
-.topnav #myMenu {
-  display: none;
-}
-/* Style navigation menu links */
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-/* Style the hamburger menu */
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 /* Style the active link (or home/logo) */
 
 .active {
   background-color: $color-primary-0;
   color: white;
-}
-
-//Introduction
-.frame1 {
-  background-image: url("../images/BrickBack.jpg");
-  background-color: $color-primary-1;
-  background-size: cover;
-  margin-top: 2rem;
-
-  .fr1 {
-    text-align: center;
-    padding: 3rem 2.5rem 2.5rem;
-    font-family: $fontFam;
-
-    .frameHeader {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 1rem;
-      margin-bottom: 2rem;
-
-      h2 {
-        color: $color-primary-4;
-      }
-
-      p {
-        color: $color-primary-4;
-        text-shadow: .05rem .05rem $color-primary-2;
-      }
-    }
-
-    a {
-      @include buttonsPhone;
-    }
-  }
 }
 
 .spacer {
@@ -104,6 +29,50 @@ body {
   padding-left: 1rem;
   padding-top: 0.15rem;
   height: 2rem;
+}
+
+
+
+//Desktop View
+@media screen and (min-width: 768px){
+  .topnav{
+    display: none;
+  }
+  .navbar{
+    overflow: hidden;
+    //height: 4rem;
+    display: grid;
+    //grid-template-columns: 1fr 1fr 1fr;
+    //background-color: #fff;
+
+    font-style: $fontFam;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    img{
+      padding: 10px;
+      float: left;
+      height: 5rem;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+     }
+    ul {
+      li {
+        text-decoration: none;
+        padding: 2rem;
+        list-style-type: none;
+        display: inline;
+      }
+    }
+
+  }
+  .dropdown-menu{
+    text-decoration: none;
+    list-style: none;
+  }
 }
 
 //Tablet View
@@ -159,51 +128,44 @@ body {
   }
 }
 
-//Desktop View
-@media screen and (min-width: 768px){
-  .topnav{
-    display: none;
-  }
-  .navbar{
-    overflow: hidden;
-    height: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: $color-primary-2;
-    font-style: $fontFam;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    img{
+//Mobile View
+.navbar{
+  display:none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: $color-primary-1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
 
-      padding: 10px;
-      float: left;
-      height: 30px;
-    }
-    h1 {
-      color: #f1f1f1;
-      margin-top: 0.75rem;
-      margin-left: 2rem;
-      a {
-        color: #f1f1f1;
-        text-decoration: none;
-      }
-    }
-    ul {
-      justify-self: end;
-      li {
-        padding-right: 2rem;
-        list-style-type: none;
-        display: inline;
-        a {
-          color: #f1f1f1;
-          text-decoration: none;
-          font-size: 18px;
-          padding-right: 15px;
-        }
-      }
-    }
-
+  img {
+    padding: 10px;
+    float: left;
+    height: 30px;
   }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myMenu {
+  display: none;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* Style the hamburger menu */
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

@@ -5,47 +5,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Antalya &#304;ncil Kiliseleri - ANASAYFA</title>
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="./scss/style.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico" />
 </head>
 
 <body>
-    <!-- spacer -->
-    <div class="container spacer"></div>
-    <!-- desktop Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+  <!-- desktop Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="./images/AECLogo.jpeg" alt="Antalya &#304;ncil Kiliseleri" href="#">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <li class="nav-item">
+          <a class="nav-link" href="#">ANASAYFA</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MAKALELER
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mucizevi Do&#287;u&#351;</a></li>
+            <li><a class="dropdown-item" href="#">D&uuml;nya Ka&ccedil; Ya&#351;&#305;nda ?</a></li>
+            <li><a class="dropdown-item" href="#">Zeitgeist Belgeseli</a></li>
+            <li><a class="dropdown-item" href="#">&#304;sa Bir Efsane Midir?</a></li>
+            <li><a class="dropdown-item" href="#">Tevrat'&#305; Musa M&#305; Yazd&#305; ?</a></li>
+            <li><a class="dropdown-item" href="#">Kumran Yaz&#305;tlar&#305;</a></li>
+            <li><a class="dropdown-item" href="#">Barnaba &#304;ncili</a></li>
           </ul>
-        </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MULTİMEDYA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Canl&#305; Yay&#305;nlar</a></li>
+            <li><a class="dropdown-item" href="#">Vaazlar</a></li>
+            <li><a class="dropdown-item" href="#">Foto&#287;raflar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BİZİ TANIYIN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Tarihte Antalya</a></li>
+            <li><a class="dropdown-item" href="#">&#304;nan&ccedil; Bildirgemiz</a></li>
+            <li><a class="dropdown-item" href="#">Kurulu&#351; ve Tarih&ccedil;e</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">İLETİŞİM</a>
+        </li>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!-- mobile navbar-->
   <div class="container topnav">
@@ -63,78 +77,9 @@
     </a>
   </div>
 
-  <!-- Introduction -->
-  <div class="container frame1" id="frame1">
-    <div class="fr1">
-      <div class="frameHeader">
-        <h2>Accomplishing technical problems from your perspective:</h2>
-        <p>Thinking like an engineer experienced in psychology and interpersonal
-          communication.</p>
-      </div>
-      <a href="#frame2" class="linker">Learn More</a>
-    </div>
-  </div>
-
-  <div class="container spacer"></div>
-
-  <!-- Services -->
-  <div class="container frame2" id="frame2">
-    <img src="./images/services.jpg" alt="Services">
-    <div class="fr2">
-      <h1>Services</h1>
-      <button type="button" class="collapsible accordion">Electrical Engineering</button>
-      <div class="content">
-        <ul>
-          <li>Electrical Engineering degree from an ABET accredited University</li>
-          <br>
-          <li>Experience in test bed implementation, circuit design, and prototyping</li>
-          <br>
-          <li>Experience with MATLAB, Eagle, and Mulitsim</li>
-        </ul>
-      </div>
-      <button type="button" class="collapsible accordion">Website Development</button>
-      <div class="content">
-        <ul>
-          <li>HTML, CSS, JavaScript, and Python experience</li>
-          <br>
-          <li>Front end and back end experience with the appropriate packages</li>
-          <br>
-          <li>Let's work together to develop a website that pulls in customers and represents you well!</li>
-        </ul>
-      </div>
-      <button type="button" class="collapsible accordion">Excel</button>
-      <div class="content">
-        <ul>
-          <li>Use Excel to streamline your workflow, design process, or even personal productivity</li>
-          <br>
-          <li>Experience with an array of Excel functions as well as macro programming using VBA</li>
-        </ul>
-      </div>
-      <button type="button" class="collapsible accordion">Sound Engineering</button>
-      <div class="content">
-        <ul>
-          <li>Can perform sound system setup, soundboard training, and other sound consulting</li>
-          <br>
-          <li>Experience with small scale recording operations for those just starting out in the music industry</li>
-          <br>
-          <li>I also have years of experience playing and performing while playing piano, guitar, or singing which allows
-            me to understand many points of view</li>
-        </ul>
-      </div>
-      <button type="button" class="collapsible accordion">Live Stream Tech</button>
-      <div class="content">
-        <ul>
-          <li>Hire me for you next live stream event to get high quality audio and video</li>
-          <br>
-          <li>I can also perform light video editing for a recorded copy of your livestream event</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer container">
-    <p class="">Intuitive Solutions &copy</p>
-  </div>
+  <!-- <div class="footer container">
+    <p class="">Antalya &#304;ncil Kiliseleri &copy</p>
+  </div> -->
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/main.js" charset="utf-8"></script>
